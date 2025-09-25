@@ -29,7 +29,7 @@
     查询只涉及 `email` ，完全走索引，速度很快
 
 #### 避免索引失效
-[参考资料](https://cloud.tencent.com/developer/article/2281003?policyId=1004)
+[详细参考](https://cloud.tencent.com/developer/article/2035778)
 #### 考虑业务读写比例
 - 读多写少 → 建更多索引，加快查询。
 - 写多读少 → 减少索引，避免写操作开销过大。
@@ -39,3 +39,6 @@
 
 #### ✅ 一句话总结：
 索引是“空间换时间”，建索引的核心原则是：选择性高、查询频繁、排序分组/连接常用的列，并注意控制数量，避免写入性能下降。
+
+[参考资料1](https://cloud.tencent.com/developer/article/2281003?policyId=1004)
+[参考资料2](https://cloud.tencent.com/developer/article/1193302)
